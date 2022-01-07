@@ -27,7 +27,7 @@ let printNumbers = document.getElementById('result');
 
 let numbers = ''; // Variabile d'appoggio
 
-// First try
+// First Case
 
 /* for (let i = 1; i <= 100; i++) {
     numbers += i;
@@ -41,12 +41,11 @@ let numbers = ''; // Variabile d'appoggio
         console.log("FizzBuzz");
     }
     console.log(i);
-}
-printNumbers.innerHTML = numbers; */
+} */
 
 // -----------------------------------
 
-// Second Try
+// Second Case - Number won't get printed if the number (i) is divisible by 3 or 5
 
 for (let i = 1; i <= 100; i++) {
     if (i % 3 == 0 && i % 5 == 0) {
@@ -59,5 +58,7 @@ for (let i = 1; i <= 100; i++) {
         console.log(i);
     }
 }
+
+// -----------------------------------
 
 printNumbers.innerHTML = numbers;
